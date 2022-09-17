@@ -48,4 +48,6 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use 'junegunn/vim-easy-align'  -- 可以快速对齐
   use 'scrooloose/nerdtree'  -- 提供侧边栏
+  use 'fatih/vim-go'
+  -- use 'Valloric/YouCompleteMe'
 end)
