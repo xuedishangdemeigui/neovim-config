@@ -50,4 +50,5 @@ packer.startup(function(use)
   use 'scrooloose/nerdtree'  -- 提供侧边栏
   use 'fatih/vim-go'
   -- use 'Valloric/YouCompleteMe'
+  use {'Shougo/deoplete.nvim', run = ':UpdateRemotePlugins'}
 end)
