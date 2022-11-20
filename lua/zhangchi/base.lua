@@ -41,3 +41,21 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisks in block comments
 vim.opt.formatoptions:append { 'r' }
+
+vim.cmd([[
+  let g:deoplete#enable_at_startup = 1
+  call deoplete#custom#option('omni_patterns', { 'go': '[^. *\t]\.\w*' })
+  echo g:deoplete#enable_at_startup
+  let g:go_highlight_fields = 1
+  let g:go_highlight_functions = 1  
+  let g:go_highlight_function_calls = 1
+  let g:go_highlight_extra_types = 1
+  let g:go_highlight_operators = 1
+
+  let g:go_fmt_autosave = 1
+  let g:go_fmt_command = "goimports"
+  let g:go_auto_type_info = 1  
+  let g:go_imports_mode = "goimports"
+  let g:go_imports_autosave = 1
+]])
+-- vim.g.deoplete#enable_at_startup=1
